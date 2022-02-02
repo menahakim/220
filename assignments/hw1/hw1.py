@@ -12,23 +12,47 @@ I certify that this assignment is my own work, but I discussed it with: <Name(s)
 
 
 def calc_rec_area():
-    pass
+    length = eval(input("Enter Length:"))
+    width = eval(input("Enter Width:"))
+    area = length * width
+    print("Area =", area)
 
 
 def calc_volume():
-    pass
+    length = eval(input("Enter Length:"))
+    width = eval(input("Enter Width:"))
+    height = eval(input("Enter Height"))
+
+    total = length * width * height
+
+    print(total)
 
 
 def shooting_percentage():
-    pass
+    totalshots = eval(input("Enter the Players total shots:"))
+    totalmade = eval(input("Enter the total shots the player made:"))
+
+    percentage = totalmade / totalshots * 100
+    print(percentage)
 
 
 def coffee():
-    pass
+    poundamount = eval(input("How many pounds of coffee would you like? "))
+
+    coffeecostperpound = 10.50
+    shippingcostperpound = 0.86
+    overhead = 1.50
+
+    total = (poundamount * 10.50) + (poundamount *0.86) +1.50
+    print(total)
+
 
 
 def kilometers_to_miles():
-    pass
+    kilometer = eval(input("How many kilometers did you travel? "))
+    convert = 0.621371
+    miles = kilometer * convert
+    print("Thats", miles, "Miles!")
 
 
 if __name__ == '__main__':
