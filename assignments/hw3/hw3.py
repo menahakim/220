@@ -1,13 +1,12 @@
 """
-Name: <your name goes here – first and last>
+Name: <Mena Hakim>
 <ProgramName>.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem: <Using for loops to extract data required to solve a problem.>
 
 Certification of Authenticity:
 <include one of the following>
-I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
+I certify that this assignment is my own work, but I discussed it with: <Sam Austin>
 """
 
 
