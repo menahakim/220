@@ -1,5 +1,8 @@
-def sum_of_threes():
-    upper = eval(input("Enter the upper bound"))
-    i = input/3
-    loop = 1
-    while (loop<=i)
+grades_tbe = eval(input("How many grades will you enter?"))
+sumvariable = 0
+
+def average():
+    for i in range(grades_tbe):
+        grades = eval(input("Enter Grade"))
+        sumvariable = grades + sumvariable
+        print(sumvariable)
