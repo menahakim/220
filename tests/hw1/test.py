@@ -12,11 +12,11 @@ def main():
     builder.add_items(
         build_section('calc_rec_area', [("2", "3")], ["6"], build_calc_rec_area_tests(9), hw1.calc_rec_area))
     builder.add_items(
-        build_section('calc_volume', [("2", "3", "4")], ["chapter2"], build_calc_volume_tests(9), hw1.calc_volume))
+        build_section('calc_volume', [("2", "3", "4")], ["24"], build_calc_volume_tests(9), hw1.calc_volume))
     builder.add_items(build_section('shooting_percentage', [("10", "4")], ["40.0"], build_shooting_percentage_tests(9),
                                     hw1.shooting_percentage))
     builder.add_items(
-        build_section('coffee', [["2"]], ["chapter2.22"], build_coffee_tests(9), hw1.coffee))
+        build_section('coffee', [["2"]], ["24.22"], build_coffee_tests(9), hw1.coffee))
     builder.add_items(
         build_section('kilometers_to_miles', [["1.61"]], ["1.0"], build_kilometers_to_miles_tests(9),
                       hw1.kilometers_to_miles))
