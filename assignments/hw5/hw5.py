@@ -1,101 +1,115 @@
 """
-Name: <your name goes here – first and last>
+Name: <Mena Hakim>
 <ProgramName>.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem: <These problems .>
 
 Certification of Authenticity:
 <include one of the following>
-I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
-"""
-import math
-
-def name_reverse():
-
-ok = 1
-cool = ok + 1
-
-def company_name():
-    pass
-
-
-def initials():
-    pass
-
-
-def names():
-    pass
-
-
-def thirds():
-    pass
-
-
-def word_average():
-    pass
-
-
-def pig_latin():
-    pass
-
-
-if __name__ == '__main__':
-    # name_reverse()
-    # company_name()
-    # initials()
-    # names()
-    # thirds()
-    # word_average()
-    # pig_latin()
-    pass
-"""
-Name: <your name goes here – first and last>
-<ProgramName>.py
-
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
-
-Certification of Authenticity:
-<include one of the following>
-I certify that this assignment is entirely my own work.
 I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
 
 
 def name_reverse():
-    pass
+    name = input("Enter a name (first last): ")
+    name = name.split(" ")
+    first = name[0]
+    last = name[1]
+    print(last + ", " + first)
+
+
+name_reverse()
 
 
 def company_name():
-    pass
+    domain = input("Enter a domain:")
+    domain = domain.split(".")
+    print(domain[1])
+
+
+company_name()
 
 
 def initials():
-    pass
+    amount = eval(input("How many students are in the class?"))
+
+    for i in range(amount):
+        name = input("What is the name of student " + str(i+1) + ": ")
+        name = name.split(" ")
+        first = name[0]
+        last = name[1]
+        print(first[0] + last[0])
+
+
+initials()
 
 
 def names():
-    pass
+    names1 = input("Enter a list of names seperated by commas ")
+    names1 = names1.split(", ")
+
+    for i in names1:
+        names2 = i.split(" ")
+        print(names2[0][0] + names2[1][0], end=" ")
+
+
+names()
 
 
 def thirds():
-    pass
+    amount = eval(input("Enter the number of sentences: "))
+    acc = ""
+
+    for i in range(amount):
+        sentence = input("Enter sentence " + str(i + 1) + ": ")
+        acc = acc + sentence[0::3]
+    print(acc)
+
+
+thirds()
 
 
 def word_average():
-    pass
+    sentence = input("Enter a sentence: ")
+    words = sentence.split(" ")
+    acc = 0
+    for i in words:
+        acc = acc + len(i)
+    print(acc/len(words))
+
+
+word_average()
 
 
 def pig_latin():
-    pass
+    sentence = input("Enter a sentence to convert to pig latin: ")
+    sentence = sentence.lower()
+    words = sentence.split(" ")
+    acc = ""
+    for i in words:
+        piglatin = i[1:] + i[0] + "ay"  # 1: means the second value AND everything after it
+        acc = acc + piglatin + " "
+    acc = acc.rstrip()
+    print(acc)
+
+
+pig_latin()
 
 
 if __name__ == '__main__':
-    # name_reverse()
-    # company_name()
-    # initials()
-    # names()
-    # thirds()
-    # word_average()
-    # pig_latin()
-    pass
+    name_reverse()
+    company_name()
+    initials()
+    names()
+    thirds()
+    word_average()
+    pig_latin()
+
+
+
+
+
+
+
+
+
