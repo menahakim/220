@@ -2,11 +2,11 @@
 Name: <Mena Hakim>
 <ProgramName>.py
 
-Problem: <These problems .>
+Problem: <Use Python strings, lists, indexing, and slicing .>
 
 Certification of Authenticity:
 <include one of the following>
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
+I certify that this assignment is my own work, but I discussed it with: <Blake Easley>
 """
 
 
