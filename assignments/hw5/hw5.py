@@ -18,16 +18,10 @@ def name_reverse():
     print(last + ", " + first)
 
 
-name_reverse()
-
-
 def company_name():
     domain = input("Enter a domain:")
     domain = domain.split(".")
     print(domain[1])
-
-
-company_name()
 
 
 def initials():
@@ -41,9 +35,6 @@ def initials():
         print(first[0] + last[0])
 
 
-initials()
-
-
 def names():
     names1 = input("Enter a list of names seperated by commas ")
     names1 = names1.split(", ")
@@ -51,9 +42,6 @@ def names():
     for i in names1:
         names2 = i.split(" ")
         print(names2[0][0] + names2[1][0], end=" ")
-
-
-names()
 
 
 def thirds():
@@ -66,9 +54,6 @@ def thirds():
     print(acc)
 
 
-thirds()
-
-
 def word_average():
     sentence = input("Enter a sentence: ")
     words = sentence.split(" ")
@@ -76,9 +61,6 @@ def word_average():
     for i in words:
         acc = acc + len(i)
     print(acc/len(words))
-
-
-word_average()
 
 
 def pig_latin():
@@ -91,9 +73,6 @@ def pig_latin():
         acc = acc + piglatin + " "
     acc = acc.rstrip()
     print(acc)
-
-
-pig_latin()
 
 
 if __name__ == '__main__':
