@@ -21,7 +21,7 @@
 # b * 2 [p, g, j, j, p, g, j, j]
 
 a = "hello world!"
-for l in a
+for l in a:
     print(l)
 b = [ "paul", "george", "john", "jim" ]
 # index 0        1        2       3

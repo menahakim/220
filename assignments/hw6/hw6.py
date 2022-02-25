@@ -9,34 +9,67 @@ Certification of Authenticity:
 I certify that this assignment is entirely my own work.
 I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
+import math
 
 
 def cash_converter():
-    pass
+    number = eval(input("Enter an integer"))
+    print("$" + "{:.2f}".format(number))
 
 
 def encode():
-    pass
+    message = input("Enter a message ")
+    key = eval(input("Enter a key "))
+    acc = ""
+    for i in message:
+        var = ord(i)
+        shift = var + key
+        switch = chr(shift)
+        acc = acc + switch
+    print(acc)
 
 
 def sphere_area(radius):
-    pass
+    formula = 4 * math.pi * (radius ** 2)
+    return formula
 
 
 def sphere_volume(radius):
-    pass
-
+    formula = (4 / 3) * math.pi * (radius ** 3)
+    return formula
 
 def sum_n(number):
-    pass
+    acc = 0
+    for i in range(number + 1):
+        acc = acc + i
+    return acc
 
 
 def sum_n_cubes(number):
-    pass
+    acc = 0
+    for i in range(number + 1):
+        acc = acc + (i ** 3)
+    return acc
 
 
 def encode_better():
-    pass
+    message = input("Enter a message: ")
+    key = input("Enter a key: ")
+    message = message.upper()
+    key = key.upper()
+    keyindex = 0
+    acc = ""
+    for i in range(len(message)):
+        messageval = ord(message[i]) - ord("A")
+        keyval = ord(key[keyindex]) - ord("A")
+        subtotal = messageval + keyval
+        total = subtotal % 26  # modding by 26 so it looks back to A after Z
+        total = total + ord("A")  # restoring ascii values that were subtracted line 65-66
+        total = chr(total)  # converting ascii values back to characters
+        acc = acc + total  # adding total to accumulator
+        keyindex = keyindex + 1
+        keyindex = keyindex % len(key)
+    print(acc)
 
 
 if __name__ == '__main__':
