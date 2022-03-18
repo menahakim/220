@@ -32,41 +32,43 @@ math.sqrt(9)
 # number = square(10)
 # print(number)
 
-def distance(p1, p2):
-    x1 = p1.getX()
-    y1 = p1.getY()
-    x2 = p2.getX()
-    y2 = p2.getY()
-    return math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
+# def distance(p1, p2):
+#     x1 = p1.getX()
+#     y1 = p1.getY()
+#     x2 = p2.getX()
+#     y2 = p2.getY()
+#     return math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
+#
+#
+# my_distance = distance(Point(2, 3), Point(3, 4))
+# print(my_distance)
+#
+# # sum_diff(num_1: num_2: int) -> sum: int, diff: int
+#
+# def sum_diff(x, y):
+#     return x + y, x - y
+#
+#
+# my_sum, my_diff = sum_diff(10, 7)
+# print(my_sum, my_diff)
+#
+#
+# def get_discount(price, sale):  # 100 .20 -> will return 80
+#     price = price * (1 - sale)
+#     print(price)
+#
+#
+# price = 100
+# get_discount(price, .20)
+# print(price)
+#
+#
+# def change_point(p, x, y):
+#     p.move(x, y)
+#
+#
+# my_point = Point(2, 3)  # any complex data type changes
+# change_point(my_point, 100, 200)
+# print(my_point.getX(), my_point.getY())
 
-
-my_distance = distance(Point(2, 3), Point(3, 4))
-print(my_distance)
-
-# sum_diff(num_1: num_2: int) -> sum: int, diff: int
-
-def sum_diff(x, y):
-    return x + y, x - y
-
-
-my_sum, my_diff = sum_diff(10, 7)
-print(my_sum, my_diff)
-
-
-def get_discount(price, sale):  # 100 .20 -> will return 80
-    price = price * (1 - sale)
-    print(price)
-
-
-price = 100
-get_discount(price, .20)
-print(price)
-
-
-def change_point(p, x, y):
-    p.move(x, y)
-
-
-my_point = Point(2, 3)  # any complex data type changes
-change_point(my_point, 100, 200)
-print(my_point.getX(), my_point.getY())
+# --------------------------------------------------------------------------
