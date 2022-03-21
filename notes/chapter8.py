@@ -31,29 +31,29 @@ from graphics import *
 # You do 1. Not 2. And 3. Or
 # functions should be single purpose
 
-def is_game_over(player_one_points, player_two_points):
-    over_fifteen = player_one_points >= 21 or player_two_points >= 21
-    won_by_two = abs(player_one_points - player_two_points) >= 2
-    skunked = player_one_points >= 7 and player_two_points == 0 or player_two_points >= 7 and player_one_points == 0
-    if over_fifteen and won_by_two or skunked:
-        return True
-    return False
+# def is_game_over(player_one_points, player_two_points):
+#     over_fifteen = player_one_points >= 21 or player_two_points >= 21
+#     won_by_two = abs(player_one_points - player_two_points) >= 2
+#     skunked = player_one_points >= 7 and player_two_points == 0 or player_two_points >= 7 and player_one_points == 0
+#     if over_fifteen and won_by_two or skunked:
+#         return True
+#     return False
+#
+#
+# def deMorgan_one(a, b):
+#     return not(a or b) == (not a and not b)
+#
+# def deMorgan_test():
+#     tests = [[True, True], [True, False], [False, True], [False, False]]
+#     for test in tests:
+#         a = test[0]
+#         b = test[1]
+#         result = deMorgan_one(a, b)
+#         print('input: {}, output: {}'.format(test, result))
 
 
-def deMorgan_one(a, b):
-    return not(a or b) == (not a and not b)
-
-def deMorgan_test():
-    tests = [[True, True], [True, False], [False, True], [False, False]]
-    for test in tests:
-        a = test[0]
-        b = test[1]
-        result = deMorgan_one(a, b)
-        print('input: {}, output: {}'.format(test, result))
-
-
-if __name__ == '__main__':
-    deMorgan_test()
+# if __name__ == '__main__':
+    # deMorgan_test()
     # player_1 = 0
     # player_2 = 0
     # while not is_game_over(player_1, player_2):
@@ -86,3 +86,56 @@ if __name__ == '__main__':
 # not(a and b) == not a or not b
 
 # truthy/falsy act like booleans but are different data types
+
+def average_sentinel_enter():
+    acc = 0
+    count = 0
+    num = 0
+    while num != "":
+        acc = acc + eval(num)
+        count = count + 1
+        num = input("Enter a number (negative to stop)>> ")
+    print("average: {}".format(acc / (count - 1)))
+
+
+def average_file():  # for loop, looping through lines of file
+    acc = 0
+    count = 0
+    file_name = 'file_data.txt'
+    file = open(file_name, 'r')
+    for line in file:
+        acc = acc + eval(line)
+        count = count + 1
+    print("average: {}".format(acc / (count - 1)))
+
+
+def average_file_while():  # while loop version
+    acc = 0
+    count = 0
+    file_name = 'file_data.txt'
+    file = open(file_name, 'r')
+    line = file.readline()
+    while line != "":
+        acc = acc + eval(line)
+        count = count + 1
+        line = file.readline()
+    print("average: {}".format(acc / (count - 1)))
+
+
+def average_file_nested():  # while loop version
+    acc = 0
+    count = 0
+    file_name = 'file_data.txt'
+    file = open(file_name, 'r')
+    line = file.readline()
+    while line != "":
+        # line = '4,5,6'
+        nums_string = line.split(",")  # ['4', '5', '6']
+        for num in nums_string:
+        acc = acc + eval(num)
+        count = count + 1
+        line = file.readline()
+    print("average: {}".format(acc / (count - 1)))
+
+if __name__ == '__main__':
+    average_sentinel_enter()

@@ -85,7 +85,7 @@ def circle_overlap():
     distance2 = math.sqrt(
         (center2.getX() - circumference_point2.getX()) ** 2 + (center2.getY() - circumference_point2.getY()) ** 2)
     circle_two = Circle(center2, distance2)
-    circle_two.setFill("light blue")
+    circle_two.setFill("light pink")
     circle_two.draw(win)
     overlaps = did_overlap(circle_one, circle_two)
     if overlaps == True:
