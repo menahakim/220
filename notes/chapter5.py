@@ -29,6 +29,7 @@ for name in b:
     print(name)
 
 # INDEXING position of first element is always 0 position of last element is len(b) - 1
+# a = "hello world!"
 # c = a[7]
 # print(c) would be W and is a string
 
@@ -91,7 +92,7 @@ for name in b:
 # ASCII is also another standard encoding method
 # A ----> 65  B ----> 66 C ----> 67 etc...
 # Decoding going back to original value
-# ord() - ordinal string as parameter returns an integer
+# ord() - ordinal takes string as parameter returns an integer
 # ord("A") returns 65
 # chr() - character
 # chr(97) takes an integer as parameter returns a string
