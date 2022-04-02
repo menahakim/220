@@ -1,0 +1,5 @@
+Henry, 122, 228
+Susan Comptwell, 100, 400
+Denny Dibblebit, 18, 41.5
+Jim Jones, 48.5, 155
+Frank Smih, 37, 125.33
