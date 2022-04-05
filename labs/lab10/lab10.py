@@ -9,7 +9,7 @@ def main():
     win = GraphWin("Test", width, height)
     win.setBackground('white')
 
-    button_shape = Rectangle(Point(130, 50), Point(375, 100))
+    button_shape = Rectangle(Point(190, 50), Point(310, 100))
     button_label = 'Exit'
     button = Button(button_shape, button_label)
     button.color_button('red')
