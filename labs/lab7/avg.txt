@@ -1,0 +1,6 @@
+Billy Bother 87.0
+Error: The weights are less than 100
+Hermione Heffalump 95.4
+Error: The weights are more than 100
+Kurt The Kidd 82.5
+Class average:  88.3
