@@ -1,4 +1,4 @@
-from graphics import Circle, Line
+from graphics import *
 
 
 class Face:
@@ -24,10 +24,36 @@ class Face:
         self.mouth.draw(window)
 
     def smile(self):
-        pass
+        center_mouth = self.mouth.getCenter()# save the center point from self.mouth
+        center_mouth.undraw()#undraw self.mouth
+        self.mouth = Polygon(self.mouth.getCenter())#set self.mouth equal to a new triangle with the same center point
+        self.mouth.draw()
+
 
     def shock(self):
+        center_mouth = self.mouth.getCenter()  # save the center point from self.mouth
+        center_mouth.undraw()
+        self.mouth = Circle(Point(self.mouth.getCenter), 10)
+        self.mouth.draw()
         pass
 
     def wink(self):
+        self.left_eye = self.left_eye.getCenter()# save the center point from self.left_eye
+        smile = smile(self)  #call smile() to change mouth
+        self.left_eye.undraw()  #undraw self.left_eye
+        self.left_eye = Line(150, 350) #set self.left_eye equal to a new line with the same center point
+        self.left_eye.draw() #draw self.left_eye
         pass
+
+
+def main():
+    win = GraphWin("Face", 500, 500)
+    center = (Point(250, 250))
+    size = 250
+
+    my_face = Face(win, center, size)
+    win.getMouse()
+
+
+main()
+
