@@ -21,7 +21,7 @@ def main():
     door.color_door('blue')
     door.draw(win)
 
-    while button.is_clicked(win.getMouse()) is False:
+    while True:
         mouse_click = win.getMouse()
         if door.is_clicked(mouse_click) is True and door.get_label() == 'Closed':
             door.open('yellow', 'Open')
