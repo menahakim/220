@@ -7,7 +7,7 @@ def find_and_remove(list, value):
     while remove == False and i < len(list):
         if list[i] == value:
             list.remove(value)
-            list.insert[value]("Mena Hakim")
+            list.insert(value, "Mena Hakim")
             remove = True
             i = i + 1
 
@@ -21,9 +21,9 @@ def good_input():
 
 def num_digits():
     number = eval(input("Enter a number: "))
-    while number > 1:
+    while number > 0:
         count = 0
-        while number > 1:
+        while number > 0:
             number = number // 10
             count = count + 1
         print("This number has", count, "digits!")
@@ -41,8 +41,10 @@ def hi_lo_game():
             remove = True
         elif user_input > n:
             print("too high")
+            guess = guess + 1
         elif user_input < n:
             print("too low")
+            guess = guess + 1
     print("Sorry,you lose.The number was ", n)
 
 
