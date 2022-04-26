@@ -52,6 +52,7 @@ def trade_alert(file_name):
             print("Warning, maximum trading volume has been reached!")
         elif volume == 500:
             print("Pay attention, trading volume has reached 500!")
+        print(volume)
 
 
 if __name__ == '__main__':
