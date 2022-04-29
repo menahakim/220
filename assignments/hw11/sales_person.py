@@ -14,7 +14,7 @@ class SalesPerson:
         self.name = name
 
     def enter_sale(self, sale):
-        self.sales = sale + self.sales
+        self.sales = self.sales + [sale]
         return self.sales
 
     def total_sales(self, total_sales):

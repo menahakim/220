@@ -7,16 +7,16 @@ class SalesForce:
         self.sales_people = []
 
     def add_data(self, file_name):
-        with open(file_name) as f:
-            for line in f:
-                line = line.strip()
-                line = line.split(",")
-                employee_id = int(line[0])
-                name = line[1]
-                sales = []
-                for sale in line[2:]:
-                    sales.append(float(sale))
-                self.sales_people.append(SalesPerson(employee_id, name, sales))
+        f = open(file_name, "r")
+        for line in f:
+            line = line.strip()
+            line = line.split(",")
+            employee_id = int(line[0])
+            name = line[1]
+            sales = []
+            for sale in line[2:]:
+                sales.append(float(sale))
+            self.sales_people.append(SalesPerson(employee_id, name, sales))
 
     def quota_report(self, quota):
         report = []

@@ -61,7 +61,7 @@ for name in b:
 # numbers [ ]
 # for i in range(10)
 #   number=eval(input("Enter a number"))
-#   number.append(number)
+#   numbers.append(number)
 
 # a = "hello, world!"
 # b = a.upper()
