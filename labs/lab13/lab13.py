@@ -1,3 +1,6 @@
+from graphics import Rectangle, Point
+
+
 def is_in_binary(search_val, values):
     lowest = 0
     highest = len(values) - 1
@@ -20,6 +23,12 @@ def selection_sort(values):
                 lowest = j
         values[i], values[lowest] = values[lowest], values[i]
     return values
+
+
+my_rect = [Rectangle(Point(1.0, 1.0), Point(25.0, 25.0)),
+           Rectangle(Point(1.0, 1.0), Point(5.0, 5.0)),
+           Rectangle(Point(1.0, 1.0), Point(25.0, 25.0))]
+
 
 
 def calc_area(rect):
@@ -56,4 +65,8 @@ def trade_alert(file_name):
 
 
 if __name__ == '__main__':
-    pass
+    is_in_binary(5, 10)
+    selection_sort(10)
+    calc_area(my_rect)
+    rect_sort(my_rect)
+    trade_alert("trades.txt")
