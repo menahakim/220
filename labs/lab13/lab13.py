@@ -30,7 +30,6 @@ my_rect = [Rectangle(Point(1.0, 1.0), Point(25.0, 25.0)),
            Rectangle(Point(1.0, 1.0), Point(25.0, 25.0))]
 
 
-
 def calc_area(rect):
     x1 = rect.getP1().getX()
     x2 = rect.getP2().getX()
@@ -65,8 +64,8 @@ def trade_alert(file_name):
 
 
 if __name__ == '__main__':
-    is_in_binary(5, 10)
-    selection_sort(10)
+    is_in_binary([5], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    selection_sort([10])
     calc_area(my_rect)
     rect_sort(my_rect)
     trade_alert("trades.txt")
