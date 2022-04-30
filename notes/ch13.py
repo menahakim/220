@@ -93,7 +93,7 @@ if __name__ == '__main__':
 # Worst case for Linear is 0(n) go through all items in the list
 # Best case for Binary 0(1)
 # Worst case for linear 0(log n)
-# when you call a function inside of itself that is called a recursion error
+# when you call a function inside of itself that is called a recursion
 # Recursive function needs to have a base case to exit the recursion
 # Stack Overflow is when a computer runs out of memory
 

@@ -64,8 +64,7 @@ def trade_alert(file_name):
 
 
 if __name__ == '__main__':
-    is_in_binary([5], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-    selection_sort([10])
-    calc_area(my_rect)
-    rect_sort(my_rect)
+    print(is_in_binary(5, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+    print(selection_sort([10, 5, 7, 9, 3]))
+    print(rect_sort(my_rect))
     trade_alert("trades.txt")
